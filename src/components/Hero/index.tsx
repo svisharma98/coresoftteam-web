@@ -25,7 +25,7 @@ const Hero = () => {
                     href=""
                     className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Get Pro
+                    CST
                   </Link>
                   <Link
                     href="https://www.linkedin.com/in/vishwajeet-sharma-a4a7461a6/"
