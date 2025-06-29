@@ -12,12 +12,12 @@ const Pricing = () => {
       <div className="container">
         <SectionTitle
           title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="At Core Soft Team, we believe in transparent pricing that fits businesses of all sizes — whether you're a startup or an established enterprise. No hidden fees. No surprises. Just high-quality service at a fair price."
           center
           width="665px"
         />
 
-        <div className="w-full">
+        {/* <div className="w-full">
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
             <span
               onClick={() => setIsMonthly(true)}
@@ -97,7 +97,7 @@ const Pricing = () => {
             <OfferList text="Lifetime Access" status="active" />
             <OfferList text="Free Lifetime Updates" status="active" />
           </PricingBox>
-        </div>
+        </div> */}
       </div>
 
       <div className="absolute bottom-0 left-0 z-[-1]">
