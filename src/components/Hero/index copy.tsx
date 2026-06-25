@@ -188,4 +188,3 @@ function Feature({ icon, title }) {
     </div>
   );
 }
-
