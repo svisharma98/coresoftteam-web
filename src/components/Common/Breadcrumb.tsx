@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const Breadcrumb = ({
   pageName,
   description,
@@ -9,41 +7,91 @@ const Breadcrumb = ({
 }) => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-28 lg:pt-[150px]">
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 md:w-8/12 lg:w-7/12">
-              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
-                <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
-                  {pageName}
-                </h1>
-                <p className="text-base font-medium leading-relaxed text-body-color">
-                  {description}
-                </p>
-              </div>
-            </div>
-            <div className="w-full px-4 md:w-4/12 lg:w-5/12">
-              <div className="text-end">
-                <ul className="flex items-center md:justify-end">
-                  <li className="flex items-center">
-                    <Link
-                      href="/"
-                      className="pr-1 text-base font-medium text-body-color hover:text-primary"
-                    >
-                      Home
-                    </Link>
-                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
-                  </li>
-                  <li className="text-base font-medium text-primary">
-                    {pageName}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section className="relative z-10 overflow-hidden pt-28">
 
-        <div>
+        <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+          {/* Grid Background */}
+          {/* <div className="absolute inset-0 bg-[linear-gradient(to_right,#3b82f610_1px,transparent_1px),linear-gradient(to_bottom,#3b82f610_1px,transparent_1px)] bg-[size:55px_55px]" /> */}
+
+          <div className="absolute inset-0 opacity-30">
+            <svg
+              className="absolute bottom-0 w-full h-full text-blue-200 dark:text-slate-800"
+              viewBox="0 0 1440 320"
+              preserveAspectRatio="none"
+            >
+              <path
+                fill="currentColor"
+                d="M0,224L60,213.3C120,203,240,181,360,176C480,171,600,181,720,192C840,203,960,213,1080,192C1200,171,1320,117,1380,90.7L1440,64L1440,320L0,320Z"
+              />
+            </svg>
+          </div>
+
+          {/* Large Glow */}
+          <div className="absolute left-1/2 top-12 h-[450px] w-[450px] -translate-x-1/2 rounded-full bg-blue-500/20 blur-[120px]" />
+
+          {/* Floating Balls */}
+
+          <div className="floating-ball absolute top-20 left-24 h-24 w-24 rounded-full bg-blue-400/20 blur-md"></div>
+          <div className="floating-ball2 absolute right-28 top-28 h-16 w-16 rounded-full bg-cyan-400/20 blur-md"></div>
+          <div className="floating-ball3 absolute bottom-24 left-40 h-12 w-12 rounded-full bg-violet-400/30 blur-sm"></div>
+          <div className="floating-ball4 absolute right-40 bottom-20 h-20 w-20 rounded-full bg-sky-300/20 blur-md"></div>
+
+          {/* Floating Icons */}
+
+          <div className="floating-icon absolute left-16 top-1/2 hidden lg:flex h-18 w-18 rounded-3xl bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-xl items-center justify-center rotate-12">
+            <span className="text-4xl font-bold text-blue-600">
+              {"</>"}
+            </span>
+          </div>
+
+          <div className="floating-icon2 absolute right-24 top-20 hidden lg:flex h-18 w-18 rounded-3xl bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-xl items-center justify-center -rotate-12">
+            <span className="text-4xl font-bold text-violet-600">
+              {"{}"}
+            </span>
+          </div>
+
+          <div className="floating-icon3 absolute right-60 bottom-20 hidden lg:flex h-16 w-16 rounded-2xl bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-lg items-center justify-center">
+
+            <span className="text-3xl">
+              💻
+            </span>
+          </div>
+
+          {/* Fixed height of this below div */}
+
+          <div className="relative max-w-7xl mx-auto px-6 text-center h-[210px] flex flex-col items-center justify-center">
+            <h1 className="mt-8 text-5xl md:text-6xl font-black tracking-tight">
+              {/* <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-cyan-500 bg-clip-text text-transparent animate-gradient">
+                Our
+              </span>{" "} */}
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-cyan-500 bg-clip-text text-transparent animate-gradient">
+                {pageName}
+              </span>
+            </h1>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg pb-8 leading-8 text-slate-600 dark:text-slate-300">
+              {description}
+            </p>
+
+            {/* <div className="mt-10 flex items-center justify-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+              <Link
+                href="/"
+                className="flex items-center gap-2 hover:text-blue-600 transition"
+              >
+                <Home size={16} />
+                Home
+              </Link>
+
+              <ChevronRight size={16} />
+
+              <span className="font-semibold text-blue-600">
+                {pageName}
+              </span>
+            </div> */}
+          </div>
+        </section>
+
+        {/* <div>
           <span className="absolute left-0 top-0 z-[-1]">
             <svg
               width="287"
@@ -116,7 +164,7 @@ const Breadcrumb = ({
               </defs>
             </svg>
           </span>
-        </div>
+        </div> */}
       </section>
     </>
   );

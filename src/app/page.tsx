@@ -1,5 +1,6 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import AboutUsPage from "@/components/About/AboutUs";
 import Blog from "@/components/Blog";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
@@ -11,6 +12,8 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
+import ServicesPageComponent from "@/components/Services/ServicesPage";
+import PageHeaderBread from "@/components/Common/PageHeaderBread";
 
 export const metadata: Metadata = {
   title: "Core Soft Team",
@@ -23,6 +26,11 @@ export default function Home() {
     <>
       <ScrollUp />
       <HomePage />
+      <PageHeaderBread title="About Us" />
+      <AboutUsPage />
+      <PageHeaderBread title="Our Services" />
+
+      <ServicesPageComponent />
       {/* <Hero /> */}
       <Features />
       <Video />

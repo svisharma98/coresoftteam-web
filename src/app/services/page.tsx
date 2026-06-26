@@ -1,28 +1,26 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import AboutUsPage from "@/components/About/AboutUs";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import ServicesPageComponent from "@/components/Services/ServicesPage";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Page | Core Soft Team",
-  description: "This is About Page for Core Soft Team",
+  title: "Services Page | Core Soft Team",
+  description: "This is Services Page for Core Soft Team",
   // other metadata
 };
 
-const AboutPage = () => {
+const ServicesPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
+        pageName="Our Services"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
       />
-      {/* <AboutSectionOne />
-      <AboutSectionTwo /> */}
-      <AboutUsPage />
+      <ServicesPageComponent />
     </>
   );
 };
 
-export default AboutPage;
+export default ServicesPage;
