@@ -4,15 +4,15 @@ type PropsType = {
   isOpen: boolean;
   onClose: () => void;
 } & (
-  | {
+    | {
       channel: "youtube";
       videoId: string;
     }
-  | {
+    | {
       channel?: "custom";
       src: string;
     }
-);
+  );
 
 export default function VideoModal({ isOpen, onClose, ...props }: PropsType) {
   if (!isOpen) return null;
@@ -20,6 +20,7 @@ export default function VideoModal({ isOpen, onClose, ...props }: PropsType) {
   let src = "";
 
   if (props.channel === "youtube") {
+    // https://youtu.be/0x5mf8BUJZY?si=W87RFXWHIWGdjARq
     src = `https://www.youtube.com/embed/${props.videoId}`;
   } else {
     src = props.src;

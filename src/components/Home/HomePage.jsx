@@ -1,3 +1,4 @@
+"use client";
 
 import {
     Users,
@@ -13,8 +14,11 @@ import {
     TrendingUp,
     ArrowRight,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function HomePage() {
+    const route = useRouter();
     return (
         // <section className="relative overflow-hidden bg-[#f8fbff]">
         <section className="relative overflow-hidden bg-gradient-to-b from-sky-50 via-white to-blue-50 pb-16 dark:from-slate-950 dark:via-slate-950 dark:to-slate-900">
@@ -56,14 +60,22 @@ export default function HomePage() {
                         </p>
 
                         <div className="flex flex-wrap gap-4 mt-8">
-                            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg dark:bg-sky-500 dark:hover:bg-sky-400">
+                            <Link
+                                href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg dark:bg-sky-500 dark:hover:bg-sky-400">
                                 Get Started
-                            </button>
+                            </Link>
 
-                            <button className="border border-blue-200 bg-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100">
-                                Explore Services
-                                <ArrowRight size={18} />
-                            </button>
+
+                            <Link
+                                href="/services"
+                                className="border border-blue-200 bg-white px-8 py-4 rounded-xl 
+                            font-semibold flex items-center gap-2 hover:bg-blue-50
+                            dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
+                            >
+                                Explore Services <ArrowRight size={18} />
+                            </Link>
+
+
                         </div>
 
                     </div>
