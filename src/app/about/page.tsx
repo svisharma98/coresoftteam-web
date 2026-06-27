@@ -16,7 +16,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="CoresoftTeam delivers modern, secure, and scalable software solutions that help businesses innovate, grow, and succeed in the digital world."
       />
       {/* <AboutSectionOne />
       <AboutSectionTwo /> */}

@@ -16,7 +16,7 @@ const ServicesPage = () => {
     <>
       <Breadcrumb
         pageName="Our Services"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="We provide end-to-end software development services, helping businesses create secure, scalable, and high-performance digital products."
       />
       <ServicesPageComponent />
     </>
