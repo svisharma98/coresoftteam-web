@@ -63,7 +63,7 @@ export default function Footer() {
           {/* Company */}
           <div className="lg:col-span-2">
             <Image
-              src="/images/logo/logo6.png"
+              src="/images/logo/logo.png"
               alt="Core Soft Team"
               width={220}
               height={60}
