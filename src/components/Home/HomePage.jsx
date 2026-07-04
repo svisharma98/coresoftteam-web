@@ -61,14 +61,14 @@ export default function HomePage() {
 
                         <div className="flex flex-wrap gap-4 mt-8">
                             <Link
-                                href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg dark:bg-sky-500 dark:hover:bg-sky-400">
+                                href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-semibold shadow-lg dark:bg-sky-500 dark:hover:bg-sky-400">
                                 Get Started
                             </Link>
 
 
                             <Link
                                 href="/services"
-                                className="border border-blue-200 bg-white px-8 py-4 rounded-xl 
+                                className="border border-blue-200 bg-white px-8 py-3 rounded-md 
                             font-semibold flex items-center gap-2 hover:bg-blue-50
                             dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
                             >
