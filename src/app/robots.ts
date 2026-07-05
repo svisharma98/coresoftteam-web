@@ -1,5 +1,7 @@
 import { MetadataRoute } from "next";
 
+const baseUrl = "https://coresoftteam.com";
+
 export default function robots(): MetadataRoute.Robots {
     return {
         rules: [
@@ -8,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
                 allow: "/",
             },
         ],
-        sitemap: "http://localhost:3000/sitemap.xml",
+        sitemap: `${baseUrl}/sitemap.xml`,
     };
 }
