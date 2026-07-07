@@ -7,9 +7,10 @@ const Breadcrumb = ({
 }) => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-28">
-
-        <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+      <section className="relative z-10 overflow-hidden pt-25">
+        <section className="relative overflow-hidden
+        pt-10 pb-10 sm:py-0
+        bg-gradient-to-br from-sky-50 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
           {/* Grid Background */}
           {/* <div className="absolute inset-0 bg-[linear-gradient(to_right,#3b82f610_1px,transparent_1px),linear-gradient(to_bottom,#3b82f610_1px,transparent_1px)] bg-[size:55px_55px]" /> */}
 
